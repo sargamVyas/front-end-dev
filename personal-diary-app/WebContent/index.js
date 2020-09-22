@@ -29,13 +29,13 @@ function addEntryToDom(event)
     
     const displayEntryButton = document.createElement('button');
     displayEntryButton.className = 'display-entry-button';
-    displayEntryButton.innerText = 'Entry ' + count +': '+ date;
+    displayEntryButton.innerText = 'Entry ' + count + ': '+ date;
     entriesNav.appendChild(displayEntryButton);
 
     displayEntryButton.addEventListener('click', function() 
     {
     	const allEntries = document.querySelectorAll('.single-entry');
-        for (let index = 0; index < allEntries.length; index++) 
+        for (let index=0; index < allEntries.length; index++) 
         {
             allEntries[index].style.display = 'none';
         }
