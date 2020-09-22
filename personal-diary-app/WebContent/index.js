@@ -15,8 +15,8 @@ function addEntryToDom(event)
 	let today = new Date();
 
 	let date = today.getFullYear() 
-	+ '-' + (today.getMonth()+1) 
-	+ '-' +  today.getDate();
+	  + '-' + (today.getMonth() + 1) 
+	  + '-' +  today.getDate();
 	
     event.preventDefault();
     
@@ -29,7 +29,7 @@ function addEntryToDom(event)
     
     const displayEntryButton = document.createElement('button');
     displayEntryButton.className = 'display-entry-button';
-    displayEntryButton.innerText = 'Entry ' + count + ': '+ date;
+    displayEntryButton.innerText = 'Entry ' + count + ': ' + date;
     entriesNav.appendChild(displayEntryButton);
 
     displayEntryButton.addEventListener('click', function() 
